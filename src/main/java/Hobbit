@@ -1,0 +1,18 @@
+package lotr;
+
+public class Hobbit extends Character{
+
+    public Hobbit() {
+        super(3, 0);
+    }
+    @Override
+    public void kick(Character c){
+        System.out.println("眼淚眼淚\r\n眼淚眼淚");
+    }
+    @Override
+    public String toString() {
+        return "Hobbit is crying now: " +
+                getHp() +
+                "\r\n The Hobbit's power " + getPower();
+    }
+}

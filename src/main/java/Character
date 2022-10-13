@@ -1,0 +1,43 @@
+package lotr;
+
+public class Character {
+    private int power;
+    private int hp;
+
+    public Character(int power, int hp) {
+    }
+
+    public void setPower(int power) {
+        if(power<0)power=0;
+        this.power = power;
+    }
+    public void setHp(int hp) {
+        if(hp<0)hp=0;
+        this.hp = hp;
+    }
+    public void kick(Character c){
+
+    }
+    public boolean isAlive(){
+        if (getHp()>0) {
+            return true;
+        }
+        else {
+            return false;
+        }
+
+    }
+    @Override
+    public String toString() {
+        return "Character{" +
+                "power=" + power +
+                ", hp=" + hp +
+                '}';
+    }
+    public int getPower() {
+        return power;
+    }
+    public int getHp() {
+        return hp;
+    }
+}
